@@ -1,0 +1,18 @@
+<div class="layout-topbar">
+    <a class="layout-topbar-logo" routerLink="">
+        <img src="assets/images/angular.jpg" alt="logo">
+        <span>SAKAI</span>
+    </a>
+
+    <!-- <button #menubutton class="p-link layout-menu-button layout-topbar-button" (click)="layoutService.onMenuToggle()">
+        <i class="pi pi-bars"></i>
+    </button> -->
+
+
+
+    <div #topbarmenu class="layout-topbar-menu">
+        <p-menu #menu [model]="itemsTopbar" [popup]="true"></p-menu>
+        <p-button icon="pi pi-user" [rounded]="true" (click)="menu.toggle($event)" severity="info"
+            [outlined]="true"></p-button>
+    </div>
+</div>
